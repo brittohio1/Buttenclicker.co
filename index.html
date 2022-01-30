@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "Clicks you have" + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("result").innerHTML = "0_0 Sory This website is not supported for your browser...";
+  }
+}
+</script>
+</head>
+<body>
+
+<p><button onclick="clickCounter()" type="button">Clicks you have </button></p>
+<div id="result"></div>
+<p>Click the button to make clicks go brrrrrrr.</p>
+<p>Note:if you close the website your clicks will still be saved.</p>
+<br>
+<br> 
+<br> 
+This website was made by Jtheking Subscribe to him here  -----> <!DOCTYPE html>
+<html>
+  <head>
+    <title>Click the button</title>
+  </head>
+  <body>
+    <button onclick="window.location.href='https://www.youtube.com/c/JtheKing?sub_confirmation=1;">
+      Click Here
+    </button>
+  </body>
+</html>
+</body>
+</html>
+
